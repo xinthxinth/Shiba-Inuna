@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shiba Inu Crypto</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Fredoka One', cursive; }
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    .bg-kawaii { background: linear-gradient(to bottom right, #ffe4e6, #fbcfe8); }
+    .bg-kawaii-dark { background: linear-gradient(to bottom right, #1f1f2e, #3f3f5e); }
+  </style>
+</head>
+<body class="bg-kawaii dark:bg-kawaii-dark text-pink-900 dark:text-pink-100 transition-colors duration-500">
+
+  <!-- 🌙 Dark Mode Toggle -->
+  <div class="fixed top-4 right-4 z-50">
+    <button onclick="toggleDarkMode()" class="bg-white dark:bg-pink-500 text-pink-800 dark:text-white p-2 rounded-full shadow hover:scale-110 transition">
+      🌓
+    </button>
+  </div>
+
+  <!-- 🌐 Navigation Bar -->
+  <nav class="w-full sticky top-0 z-40 bg-white/80 dark:bg-pink-900/90 backdrop-blur border-b border-pink-300 dark:border-pink-800 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+      <a href="#home" class="text-2xl text-pink-600 dark:text-pink-200 hover:text-pink-800">🐶 Shiba Inu</a>
+      <div class="flex space-x-6 items-center text-lg">
+        <a href="#tokenomics" class="hover:text-pink-500">Tokenomics</a>
+        <a href="#roadmap" class="hover:text-pink-500">Roadmap</a>
+        <a href="https://twitter.com" target="_blank" class="hover:text-pink-500">Twitter</a>
+        <a href="https://facebook.com" target="_blank" class="hover:text-pink-500">Facebook</a>
+        <a href="https://tiktok.com" target="_blank" class="hover:text-pink-500">TikTok</a>
+        <!-- 🦊 Wallet Connect Placeholder -->
+        <button class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full text-sm shadow">Connect Wallet</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6" id="home">
+    <img src="https://i.imgur.com/OC5L2Wa.png" alt="Shiba Inu" class="w-52 mb-6 rounded-full shadow-xl border-4 border-pink-300 float" />
+    <h1 class="text-5xl md:text-6xl font-bold mb-4 animate__animated animate__fadeInDown">Shiba Inu Crypto</h1>
+    <p class="text-2xl mb-8 animate__animated animate__fadeInUp animate__delay-1s">The cutest coin on the blockchain! 🐶✨</p>
+    <a href="#tokenomics" class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-full text-xl shadow-lg transform hover:scale-105 transition animate__animated animate__fadeInUp animate__delay-2s">
+      See Tokenomics 🪙
+    </a>
+  </section>
+
+  <!-- Tokenomics Section -->
+  <section id="tokenomics" class="bg-white dark:bg-pink-900 bg-opacity-80 dark:bg-opacity-50 py-16 px-8 text-center">
+    <h2 class="text-4xl md:text-5xl text-pink-700 dark:text-pink-200 mb-6 animate__animated animate__fadeInUp">Tokenomics</h2>
+    <p class="text-lg max-w-3xl mx-auto mb-10 animate__animated animate__fadeInUp animate__delay-1s">
+      Shiba Inu is built for the community — with fair distribution, zero team allocation, and maximum kawaii.
+    </p>
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto animate__animated animate__fadeInUp animate__delay-2s">
+      <div class="bg-pink-100 dark:bg-pink-800 p-6 rounded-2xl shadow-lg">
+        <h3 class="text-2xl mb-2">Total Supply</h3>
+        <p class="text-xl">1,000,000,000,000</p>
+      </div>
+      <div class="bg-pink-100 dark:bg-pink-800 p-6 rounded-2xl shadow-lg">
+        <h3 class="text-2xl mb-2">Burned</h3>
+        <p class="text-xl">50%</p>
+      </div>
+      <div class="bg-pink-100 dark:bg-pink-800 p-6 rounded-2xl shadow-lg">
+        <h3 class="text-2xl mb-2">Liquidity</h3>
+        <p class="text-xl">Locked 🔒</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="py-16 px-8 text-center">
+    <h2 class="text-4xl md:text-5xl text-pink-700 dark:text-pink-200 mb-8 animate__animated animate__fadeInUp">Roadmap</h2>
+    <div class="max-w-4xl mx-auto space-y-8 text-left">
+      <div class="p-6 rounded-xl bg-pink-100 dark:bg-pink-800 shadow-md animate__animated animate__fadeInLeft">
+        <h3 class="text-2xl">🚀 Q1: Launch</h3>
+        <p>Website goes live, initial liquidity pool created, first 1,000 holders.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-pink-100 dark:bg-pink-800 shadow-md animate__animated animate__fadeInRight animate__delay-1s">
+        <h3 class="text-2xl">🌸 Q2: Community</h3>
+        <p>Telegram, Discord, giveaways, NFT teaser drops, influencer collabs.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-pink-100 dark:bg-pink-800 shadow-md animate__animated animate__fadeInLeft animate__delay-2s">
+        <h3 class="text-2xl">🐾 Q3: Expansion</h3>
+        <p>Listings on CoinGecko, CMC, DEX tools. NFT marketplace announcement.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-pink-100 dark:bg-pink-800 shadow-md animate__animated animate__fadeInRight animate__delay-3s">
+        <h3 class="text-2xl">🌕 Q4: Moon</h3>
+        <p>Big partnerships, game teaser launch, DAO voting begins.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm py-6 bg-pink-200 dark:bg-pink-950 text-pink-800 dark:text-pink-100">
+    © 2025 Shiba Inu Crypto · So cute, so decentralized 🌸🐾
+  </footer>
+
+  <!-- 🌙 Dark Mode Script -->
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+
+  <!-- 💬 Tawk.to Chat Widget -->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/000000000/default'; // Replace this with your own widget ID
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+
+</body>
+</html>
